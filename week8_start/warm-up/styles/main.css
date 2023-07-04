@@ -25,33 +25,18 @@ aside {
     width: 200px;
     height: 500px;
     background-color: #F038FF;
-    /*Solution One - using floats */
-   /* float:left; */
-
 }
 
 article {
     width: 760px;
     height: 500px;
     background-color: #EF709D;
-    /*float:right;*/
 }
 
 footer {
     height: 200px;
     background-color: #E2EF70;
-    /*clear: both;*/ 
-    /*float: left; */  
 }
-
-/* Solution Two - Flexbox 
-
-.wrapper nav + div {
-    display:flex; 
-}
-
-/*
-
 
 nav {
     height: 100px;
@@ -73,31 +58,4 @@ article {
 footer {
     height: 200px;
     background-color: #E2EF70;
-}
-
-/* Solution Three - Grid */
-
-.wrapper {
-   display: grid;
-   grid-template-columns: repeat(5, 1fr); 
-   grid-template-rows: 100px 500px 200px; 
-}
-
-nav {
-    grid-column: 1/6;
-    grid-row: 1/2;  
-}
-
-article {
-    grid-column: 1/5; 
-    grid-row: 2/3; 
-}
-
-/*aside {
-    grid-column: 5/6;
-}*/
-
-footer {
-    grid-column: 1/6;
-    grid-row: 3/4; 
 }
